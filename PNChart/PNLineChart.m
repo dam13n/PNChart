@@ -716,7 +716,7 @@
 
             // draw y axis separator
             CGFloat yStepHeight = _chartCavanHeight / _yLabelNum;
-            for (NSUInteger i = 0; i < [self.xLabels count]; i++) {
+            for (NSUInteger i = 0; i < self.yLabelNum; i++) {
                 point = CGPointMake(_chartMarginBottom + yAxisOffset, (_chartCavanHeight - i * yStepHeight + _yLabelHeight / 2));
                 CGContextMoveToPoint(ctx, point.x, point.y);
                 CGContextAddLineToPoint(ctx, point.x + 2, point.y);
